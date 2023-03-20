@@ -31,4 +31,7 @@ function createSquare() {
 
 }
 
+const array = Array(16).fill().map(() => Math.floor(100 * Math.random()));
+console.log(array);
+
 
