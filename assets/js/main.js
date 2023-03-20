@@ -9,6 +9,10 @@ const container = document.querySelector(".container");
 // creo un max numero di celle
 
 let nMax = 100;
+const bombNumbers = Array(16).fill().map(() => Math.floor(100 * Math.random()));
+console.log(bombNumbers);
+
+
 
 // creo un ciclo n volte per le celle (dove n in questo caso sta per 64)
 
@@ -24,14 +28,14 @@ function createSquare() {
     const thisCell = cellEl[j];
     //console.log(thisCell)
     thisCell.addEventListener("click", function () {
-      thisCell.classList.toggle("active")
       console.log(j + 1)
+      if (j === bombNumbers.values) {
+        thisCell.classList.toggle("bomb")
+      } else {
+        thisCell.classList.toggle("active")
+      }
     })
   }
-
 }
-
-const array = Array(16).fill().map(() => Math.floor(100 * Math.random()));
-console.log(array);
 
 

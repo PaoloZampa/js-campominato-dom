@@ -25,6 +25,10 @@
     background-color: rgb(81, 224, 81);
 }
 
+.bomb {
+    background-color: red;
+}
+
 body {
     background-color: rgb(255, 11, 231);
 }
