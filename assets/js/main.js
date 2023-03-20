@@ -19,13 +19,13 @@ function createSquare() {
   }
 
   const cellEl = document.querySelectorAll(".cell")
-  console.log(cellEl)
+  //console.log(cellEl)
   for (let j = 0; j < cellEl.length; j++) {
     const thisCell = cellEl[j];
-    console.log(thisCell)
+    //console.log(thisCell)
     thisCell.addEventListener("click", function () {
       thisCell.classList.toggle("active")
-      console.log("Changed the color")
+      console.log(j + 1)
     })
   }
 
