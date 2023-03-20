@@ -8,22 +8,19 @@ const container = document.querySelector(".container");
 
 // creo un max numero di celle
 
-let nMax = 64;
+let nMax = 100;
 
 // creo un ciclo n volte per le celle (dove n in questo caso sta per 64)
 
 function createSquare() {
 for (let i = 0; i < nMax; i++) {
-  const cell = `<div class="cell"></div>`;
+  const cell = `<div class="cell">${i + 1}</div>`;
   container.innerHTML += cell;
-  cell.innerHTML += nMax[i]
 }
 }
 
 // seleziono una cella che ha classe cell e active
-
 const cellEl = document.querySelectorAll(".cell")
-console.log(cellEl)
 
 // aggiungo eventlisner per la classe active ciclando per la lunghezza dell'array cellEl
 
@@ -37,4 +34,5 @@ function colorSquare() {
     })
   }
 }
+
 
