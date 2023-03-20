@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.cell {
+    width: calc(100% / 8);
+    border: 1px solid white;
+    aspect-ratio: 1/1;
+    color: white;
+}
+
+.bg_green {
+    background-color: green;
+}
+
+body {
+    background-color: rgb(255, 11, 231);
+}
