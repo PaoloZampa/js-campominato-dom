@@ -12,16 +12,17 @@
 }
 
 .cell {
+    display: flex;
     width: calc(100% / 10);
     border: 1px solid white;
     aspect-ratio: 1/1;
     color: white;
-    text-align: center;
-    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
 }
 
-.bg_green {
-    background-color: green;
+.active {
+    background-color: rgb(81, 224, 81);
 }
 
 body {
